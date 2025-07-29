@@ -15,7 +15,7 @@ It is **critical** that you keep the following load order in your Plugin Manager
 5. **InteractiveRpgMapControls**  
 
 👉 **Navigate here to access the documentation:**  
-**https://github.com/Lonsdale201/rpgmakermyplugins/wiki/Start-Here!**
+**[https://github.com/Lonsdale201/rpgmakermyplugins/wiki/Start-Here!](https://github.com/Lonsdale201/rpgmakermyplugins/wiki/Start-Here!)**
 
 ---
 
