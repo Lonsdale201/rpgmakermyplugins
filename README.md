@@ -1,6 +1,6 @@
 # InteractiveRpgMap Plugin Guide
 
-On this Wiki page you’ll find the full reference and setup instructions for using the plugins.
+On this Repository page you’ll find the full reference and setup instructions for using the plugins.
 
 ---
 
