@@ -42,21 +42,47 @@ It is **critical** that you keep the following load order in your Plugin Manager
 
 ## Plugin Components
 
-### 1. Core Plugin: **InteractiveRpgMap**  
-The backbone framework. **Required** by every addon—none will function without it. Here you configure your maps and core settings.
+### Core Foundation
 
-### 2. InteractiveMapElements  
-Add and configure **interactive map elements** (buildings, signs, triggers, etc.). Define each element’s interaction here.
+### 1. Core Plugin: **InteractiveRpgMap**
+The backbone framework and renderer for the interactive map system. **Required** by all InteractiveMap addons.
 
-### 3. InteractiveMapNpc  
-Display **events (NPCs)** on the map. Only events from the **current map** appear (later we’ll support cross‑map data). They behave at runtime (move, face, show only if the player can access that event).
+### 2. Utility Layer: **InteractiveMapManager**
+Core interaction helper (teleport/open-related/common-event/battle routing). Keep it loaded; usually no per-project tuning needed.
 
-### 4. InteractiveRpgMapControls  
-Customize the **map controls** (keys, zoom, open/close behavior).
-
-### 5. InteractiveMapManager  
-Utility plugin—**must** be loaded but requires **no configuration**.
+### 3. Input Layer: **InteractiveRpgMapControls**
+Centralized keybind/control plugin (open map/notes, zoom, pan, marker modifier, delete, route toggle).
 
 ---
+
+## Content & Interaction Addons
+
+### 4. **InteractiveMapElements**
+Defines clickable map elements (buildings, signs, POIs) and their configured interaction behavior.
+
+### 5. **InteractiveMapNpc**
+Projects map events/NPCs onto the interactive map (currently current-map runtime scope), with event-based visibility and portrait/click support.
+
+### 6. **InteractiveMapRouter**
+Draws a route line from player position to clicked POIs on configured region networks (with snap/exclude rules and goal marker).
+
+### 7. **InteractiveMapUserMarkers**
+Player-created custom markers/notes (Shift+click workflow), persistent per map, with optional consumable cost and delete/edit flow.
+
+### 8. **InteractiveMapNotes**
+Map codex-style menu (Info / Elements / Monsters tabs) with visibility rules, intro blocks, list/grid layouts, and pagination.
+
+### 9. **InteractiveMapDebugger** *(dev tool)*
+Development-only diagnostic overlay/logger for IRMap event flow and click/input tracing. Not needed in production builds.
+
+---
+
+## Separate System (Progress/Memory)
+
+### **Gamemory** *(separate but integrated)*
+Persistent game-memory/stat plugin (visited maps, enemy/troop/battle stats) used by some UI/visibility features (e.g., hide-until-visited / hide-until-defeated).
+
+---
+
 
 > **Tip:** Always check the Wiki for the up‑to‑date usage examples, parameter descriptions, and troubleshooting tips!
