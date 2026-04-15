@@ -8,11 +8,15 @@ On this Repository page you’ll find the full reference and setup instructions 
 
 It is **critical** that you keep the following load order in your Plugin Manager:
 
-1. **InteractiveRpgMap**  
-2. **InteractiveMapElements**  
-3. **InteractiveMapNpc**  
-4. **InteractiveMapManager**  
-5. **InteractiveRpgMapControls**  
+0. `Gamemory` *(optional)*  
+1. `InteractiveRpgMap`  *(required)*
+2. `InteractiveMapElements` *(optional)*  
+3. `InteractiveMapNpc` *(optional)*  
+4. `InteractiveMapManager` *(optional)*  
+5. `InteractiveMapUserMarkers` *(optional)*  
+6. `InteractiveMapRouter` *(optional)* 
+7. `InteractiveMapNotes` *(optional)* 
+8. `InteractiveRpgMapControls` *(required)*
 
 👉 **Navigate here to access the documentation:**  
 **[https://github.com/Lonsdale201/rpgmakermyplugins/wiki/Start-Here!](https://github.com/Lonsdale201/rpgmakermyplugins/wiki/Start-Here!)**
